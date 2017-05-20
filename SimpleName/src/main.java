@@ -25,11 +25,28 @@ public class main {
 		third_name.printNameWithHeading("Name of Person is: ");
 		
 		Scanner scan = new Scanner(System.in);
+		
+		
+		//Using getter setter methods to print name in whatever format we want
+		System.out.println("Please enter first name: ");
+		name.setFirstName(scan.next());
+		
+		System.out.println("Please enter middle name: ");
+		name.setMiddleName(scan.next());
+		
+		System.out.println("Please enter last name: ");
+		name.setLastName(scan.next());
+		
+		
+		System.out.println("Name of Person is: " + name.getFirstName() + " " + name.getLastName());
+		System.out.println("Name of Person is: " + name.getLastName() + " " + name.getMiddleName() + " " + name.getFirstName());
+		
+		
 	    																	//TO DO get and set Methods
 		
 																			//Playing around with Dialog boxes will delete this later
-		testDialogBox diagBox = new testDialogBox();
-		diagBox.showDialog();
+		//testDialogBox diagBox = new testDialogBox();
+		//diagBox.showDialog();
 		
 		scan.close();
 		

@@ -83,6 +83,42 @@ public class simpleName
 		printHeading();
 		System.out.println(last + SEPARATOR + first + SEPARATOR + middle);
 	}
+	
+	//Getter method to retrieve First name
+	public String getFirstName()
+	{
+		return first;
+	}
+	
+	//Setter method to update First name after instantiating Class
+	public void setFirstName(String in)
+	{
+		first = in;
+	}
+	
+	//Getter method to retrieve Middle name
+	public String getMiddleName()
+	{
+		return middle;
+	}
+	
+	//Setter method to update Middle name after instantiating Class
+	public void setMiddleName(String in)
+	{
+		middle = in;
+	}
+	
+	//Getter method to retrieve Last name
+	public String getLastName()
+	{
+		return last;
+	}
+	
+	//Setter method to update Last name after instantiating Class
+	public void setLastName(String in)
+	{
+		last = in;
+	}
 
 	
 	// End of Class Declaration
