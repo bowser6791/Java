@@ -45,8 +45,8 @@ public class main {
 	    																	//TO DO get and set Methods
 		
 																			//Playing around with Dialog boxes will delete this later
-		//testDialogBox diagBox = new testDialogBox();
-		//diagBox.showDialog();
+		testDialogBox diagBox = new testDialogBox();
+		diagBox.showDialog();
 		
 		scan.close();
 		

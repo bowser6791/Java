@@ -17,7 +17,7 @@ public class Time {
 	}
 	
 	//Constructor
-	public Time(int hours, int minutes, int newSeconds)
+	public Time(int hours, int minutes, double newSeconds)
 	{
 		seconds = (double)(hours * 3600 + minutes * 60) + newSeconds;
 	}
@@ -53,17 +53,28 @@ public class Time {
 		int hours = (int)seconds / 3600;
 		int minutes = (int)seconds % 3600 / 60;
 		
-		return hours + ":" + minutes + ":" + seconds % 60.0;
+		return hours + ":" + minutes + ":" + round((seconds % 60.0),3);
 	}
 	
+	//Creates another Time object then adds them together, returns another Time object that adds the two together
 	public Time plus(Time otherTime)
 	{
 		return new Time(seconds + otherTime.seconds);
 	}
 	
+	//Creates another Time object then subtracts them, returns another Time object that adds the two together
 	public Time minus(Time otherTime)
 	{
 		return new Time(seconds - otherTime.seconds);
+	}
+	
+	//Helper method that rounds a double to whatever place we want 10s, 100s, etc...
+	public static double round(double value, int places) {
+		
+	    long factor = (long) Math.pow(10, places);
+	    value = value * factor;
+	    long tmp = Math.round(value);
+	    return (double) tmp / factor;
 	}
 }
 
