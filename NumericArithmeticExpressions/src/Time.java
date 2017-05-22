@@ -71,7 +71,7 @@ public class Time {
 	//Helper method that rounds a double to whatever place we want 10s, 100s, etc...
 	public static double round(double value, int places) {
 		
-	    long factor = (long) Math.pow(10, places);
+	    long factor = (long) Math.pow(10, places);  
 	    value = value * factor;
 	    long tmp = Math.round(value);
 	    return (double) tmp / factor;
