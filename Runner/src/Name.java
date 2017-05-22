@@ -1,7 +1,7 @@
 //**REFERENCE**
 //This is a basic example of how a class should be set up
 
-public class simpleName 
+public class Name 
 {
 	// Instance Variables
 	String first;	//String container for first name
@@ -12,7 +12,7 @@ public class simpleName
 	static final String SEPARATOR = ", ";	//This is never going to change hence the static final
 	
 	// Default Constructor
-	public	simpleName()
+	public	Name()
 	{
 		//The Constructor sets up our instance variables to a default value
 		first 	= "";
@@ -21,7 +21,7 @@ public class simpleName
 	}
 	
 	// Constructor
-	public	simpleName(String firstName, String lastName, String middleName)
+	public	Name(String firstName, String lastName, String middleName)
 	{
 		//A little different than the default constructor in that it initializes
 		//instance variables to the values of parameters 
@@ -119,7 +119,12 @@ public class simpleName
 	{
 		last = in;
 	}
-
+	
+	//toString Method 
+	public String toString()
+	{
+		return last + ", " + first + ", " + last;
+	}
 	
 	// End of Class Declaration
 }
