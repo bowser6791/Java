@@ -36,7 +36,7 @@ public class main {
 		middle = in.next().trim();
 		
 		time = in.nextDouble();		//Also retrieve time from the console
-		
+		http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=3274405
 		runner2 = new Runner(new Name(first, last, middle), new Time(time));	//Contain all of the information within objects Time and Name
 		
 		//Output Race Report
@@ -54,7 +54,7 @@ public class main {
 		difference = new Time(Math.abs(time1.minus(time2).getTime()));
 		System.out.println("Difference: " + difference);
 		winning = new Time(Math.min(time1.getTime(),time2.getTime()));
-		System.out.println("Winning time:" + winning);
+		System.out.println("Winning time: " + winning);
 	}
 
 }
