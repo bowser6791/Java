@@ -42,7 +42,7 @@ public class Car {
 	
 	public String toString()
 	{
-		return "Specifications of your "+ Color + " " + Year + " " + Make + " " + Model + " " + BodyStyle + " with " + Mileage + " miles are:\n" + engine + transmission;
+		return "Specifications of your "+ Color + " " + Year + " " + Make + " " + Model + " " + BodyStyle + " with " + Mileage + " miles are:\n" + engine + "\n" + transmission;
 	}
 
 }
