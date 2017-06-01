@@ -22,7 +22,7 @@ public class SongTime {
 		
 		//Output
 		System.out.println();
-		System.out.println(name + " costs " + price + "and is " + seconds/60 + " minute(s), and " + seconds%60 + " second(s) long." );
+		System.out.println(name.trim() + " costs " + price + " and is " + seconds/60 + " minute(s), and " + seconds%60 + " second(s) long." );
 		System.out.println("Cost per minute is " + (double)price/((double)seconds/60));
 	}
 
